@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*
+ Ajatix Image/Banner Rotator
+ Copyright (C) 2011 Ajatix. All rights reserved.
+ http://www.ajatix.com
+ Unregistered copy.
+ Any usage except for the purpose of evaluation is strictly prohibited.
+*/
+.AJXIRfcGJSQA {overflow:hidden;position:relative;height:250px;width:400px;background-color:#efefef;}
+.AJXIRfcGJSQA ul {border:0px;margin:0px;padding:0px;}
+.AJXIRfcGJSQA li {border:0px;margin:0px;padding:0px;list-style-type:none;}
+.AJXIRfcGJSQApics {width:400px;height:250px;overflow:hidden;position:absolute;top:0px;left:0px;}
+.AJXIRfcGJSQAimg {width:400px;height:250px;border:none;position:absolute;left:0px;top:0px;}
+.AJXIRfcGJSQAul {height:250px;position:absolute;left:0px;top:0px;}
+.AJXIRfcGJSQAli {width:400px;height:250px;position:relative;float:left;}
+.AJXIRfcGJSQA .AJXIRfcGJSQAbtn {bottom:5px;left:10px;height:19px;position:absolute;overflow:hidden;}
+.AJXIRfcGJSQA .AJXIRfcGJSQAbtn ul li {position:relative;cursor:pointer;text-align:center;float:left;margin-top:4px;margin-bottom:0px;margin-right:4px;width:15px;height:15px;font-size:0px;background:no-repeat transparent url(ajximagerotator_files/nbbtn.png);}
+.AJXIRfcGJSQA .AJXIRfcGJSQAbtn ul li.current {background:no-repeat transparent url(ajximagerotator_files/nbbtnmo.png);}
+.AJXIRfcGJSQAlihide {display:none;}
+.AJXIRfcGJSQA br {clear:both;height:0;font-size:1px;line-height:0px;}
+
+/*
+{"background":"#FFFFFF","cssclass":{"animation":0,"animationdirection":0,"animationspeed":1,"bgcolor":"#efefef","caption":{"enabled":false},"delay":3,"height":250,"navigation":{"enabled":true,"navigationbutton":{"background":{"bgenabled":false},"border":{"enabled":false},"event":1,"height":15,"nbbtnimage":{"base64":"iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7\/AyVFwUPwC\/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN\/sZ8mCoNTIDtbpSFICpA\/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI\/Q0oKdfzQXwAZs\/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr\/DOu58vc3o8QgFh6LFpBOFTn3yqMnd\/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y\/Axk\/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn\/AACA6AAAUggAARVYAAA6lwAAF2\/XWh+QAAAA40lEQVR42qTTMUoDQRQG4C8qtsIcwFbQyiad3aQS4gFs3Et4Ca8gzA0UhFTZ3iogCIKYNu2AIASEEJtNWNZVdvV1M7yPx8z8M1iv1\/5ae82NUJT7OMcIu1himlOcNHsH9cmhKEe4xWHLoBdc5hSfvuFQlGPcVdN+qiXOcoqzLQ5FGfCG0OGorzjJKa52qo2rjhCOMIYNHva86GEdH\/TEoY4XPfGijic98X0dP2DWFeYUn7c4p7jCRfUMv9Ujis1iM1lOcYFT3OCzgT5wXQXkvTWejYwfVzGd5xTnbT2D\/\/yqrwEAra5GcP5xICUAAAAASUVORK5CYII=","fileextension":".png"},"nbbtnmoimage":{"base64":"iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7\/AyVFwUPwC\/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN\/sZ8mCoNTIDtbpSFICpA\/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI\/Q0oKdfzQXwAZs\/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr\/DOu58vc3o8QgFh6LFpBOFTn3yqMnd\/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y\/Axk\/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn\/AACA6AAAUggAARVYAAA6lwAAF2\/XWh+QAAACsUlEQVR42lyTTYtUVxCG3zpV556+fXvunWGmZ9TgBxKMupKQDzcJQbIQQ5hlNllFhID5AULI3l+QTcBslEDcuRKEgWwENQQSRUMcCWj86pl0p6e7vV\/nnHIxDgwpKGrzvjybemg0yrFrBEChaveDdA9UsqidikifGBo\/BjABEAHoThgADIA5H5fejZquTusPv6j8Oy5qZpgmIbV3\/+u521dU5brlZ\/cATAFEekOeb8PKZ7Pmg4sbs6\/6TTiYxGgpqoJJ1ZhSO\/KoXsourXfsw+8SfrwGYEKjUe5CzE+Nq9OXXk6\/WaqaQoazgGkZ0QaFZUIvNVjMDFL3st2bX\/wzs79\/zWb4q0RN+3U4fHZzdnaxbAp5PmqxseUxKcOuMqNqBHsXVuzG9Nzbrvj2y6jZRABzaNa8\/3EbVmQ4DdjY8hiMW2y9KYsh5E0EAFgx6NgjnbI9vurjshWiak\/VHnFRmV7VHtMqYFJub+MVwgQioJsYzKqANjiq\/DGnmnwqqkkvxIKjKkJU+AgEBdqgaIMCAHxQ+KgIEQhREeI8E7WFqCYz4UHLBrBMcELb1xoY2iYn1sCJQSKEhKFiNn3QuZEo3JMsuVOOq9NF3mUqSkbtFWwIrY8QIeQpo+gy8pTBPI09d7Os\/YGfRcxgvWvvX+7ae+fRO5G2wZIxhMwZ+LBN7nUY\/VywXATNkjszMZs\/KstVvnDBNYb8IOF\/jtbh0L5O0peOFcocI+8yFnqC5ULQz9vYTX57tZhdvpHa9e+d\/P1w58PSqOnx2h8+P67OrI7Kz4sQ5xlQGGoim2FYSK+Nc7f2k5NHPxA1fwGoaZcYFsBy1PQ91fRUE\/Z9FLRYZJq8YPPvLUPlmpjhbQADAB4A6H9WAYCdVJ8cbOJbJ0Oc35\/w0wdsRn\/MuV+eAmh2jAKA1wMA+2FUC7LQeZAAAAAASUVORK5CYII=","fileextension":".png"},"number":{"enabled":false},"width":15},"position":2,"x":10,"xfrom":0,"y":5,"yfrom":1},"scalelimit":60,"width":400,"zindex":2000},"id":"AJXIRfcGJSQA","prjfile":false,"product":{"Name":"AJXIR","Version":"1.2.2.0"}}
+*/
